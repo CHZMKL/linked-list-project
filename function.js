@@ -52,3 +52,5 @@ rightSide.on('click', '.readButton', function() {
 rightSide.on('click', '.deleteButton', function() {
   $(this).parent().remove();
 });
+
+//Adds http:// value to input field once it's interacted with

@@ -43,6 +43,7 @@ img {
   font-weight: bold;
   font-size: 15px;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 .containerRight {
@@ -89,6 +90,10 @@ hr {
   display: inline;
 }
 
+a {
+  text-decoration: none;
+}
+
 .readButton, .deleteButton {
   outline: none;
   border: none;
@@ -97,6 +102,7 @@ hr {
   border-bottom: 1px solid ;
   border-bottom-color: #F2F4F4;
   display: inline;
+  cursor: pointer;
 }
 
 .cardURL:hover, .readButton:hover, .deleteButton:hover {
