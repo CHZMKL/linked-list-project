@@ -79,18 +79,23 @@ hr {
 .cardURL {
   margin: 5px 0 0 30px;
   color: #607D8B;
-  text-decoration: underline;
-  /*border-top: 1px solid ;
-  border-top-color: red;
-  display: inline;*/
+  border-bottom: 1px solid ;
+  border-bottom-color: #F2F4F4;
+  display: inline;
 }
 
 .read, .delete {
   border: none;
   color: #455A64;
   background-color: #FFFFFF;
-  text-decoration: underline;
+  border-bottom: 1px solid ;
+  border-bottom-color: #F2F4F4;
+  display: inline;
+}
 
+.cardURL:hover, .read:hover, .delete:hover {
+  border-bottom-color: #FFC107;
+  font-weight: bold;
 }
 
 .read {
