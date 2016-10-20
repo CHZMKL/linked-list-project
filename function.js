@@ -11,8 +11,8 @@ submit.on('click', function() {
   var bookmarkURL = $('.cardURL');
   var newLink = title.val();
   var newURL = url.val();
-  bookmarkTitle.text(newLink);
-  bookmarkURL.text(newURL);
+  bookmarkTitle.text(this.newLink);
+  bookmarkURL.text(this.newURL);
   clearInputs();
   rightSide.prepend('<li class="defaultCard"><p class="cardTitle">' + newLink + '</p><hr size="1"><a class="cardURL" href="'+ newURL +'">' + newURL + '</a><hr size="1"><button class="readButton">Read</button><button class="deleteButton">Delete</button></li>');
 });
