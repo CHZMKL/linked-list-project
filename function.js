@@ -8,3 +8,8 @@ $('.submit').on('click', function() {
   var newLink = title.val();
   bookmarkTitle.text(newLink);
 });
+
+$('.submit').on('click', function() {
+  var newURL = url.val();
+  bookmarkURL.text(newURL);
+});
