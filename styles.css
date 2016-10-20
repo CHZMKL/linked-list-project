@@ -65,6 +65,10 @@ img {
  border: 1px solid #607D8B ;
 }
 
+.defaultCard.read {
+  background-color: #F2F4F4;
+}
+
 hr {
   width: 90%;
   color: #CFD8DC;
@@ -85,7 +89,7 @@ hr {
   display: inline;
 }
 
-.read, .delete {
+.readButton, .deleteButton {
   outline: none;
   border: none;
   color: #455A64;
@@ -95,14 +99,14 @@ hr {
   display: inline;
 }
 
-.cardURL:hover, .read:hover, .delete:hover {
+.cardURL:hover, .readButton:hover, .deleteButton:hover {
   border-bottom-color: #FFC107;
   font-weight: bold;
 }
 
-.read {
+.readButton {
   margin-left: 5%;
 }
-.delete {
+.deleteButton {
   margin-left: 75%;
 }
