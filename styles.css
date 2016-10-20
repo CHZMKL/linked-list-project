@@ -50,6 +50,7 @@ img {
   width: 50%;
   background-color: #CFD8DC;
   display: flex;
+  flex-direction: column;
   float: right;
   font-family: 'Open Sans', sans-serif;
 }
@@ -85,6 +86,7 @@ hr {
 }
 
 .read, .delete {
+  outline: none;
   border: none;
   color: #455A64;
   background-color: #FFFFFF;
