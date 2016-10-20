@@ -14,7 +14,7 @@ submit.on('click', function() {
   bookmarkTitle.text(newLink);
   bookmarkURL.text(newURL);
   clearInputs();
-  rightSide.prepend('<li class="defaultCard"><p class="cardTitle">' + newLink + '</p><hr size="1"><p class="cardURL">' + newURL + '</p><hr size="1"><button class="readButton">Read</button><button class="deleteButton">Delete</button></li>');
+  rightSide.prepend('<li class="defaultCard"><p class="cardTitle">' + newLink + '</p><hr size="1"><a class="cardURL" href="'+ newURL +'">' + newURL + '</a><hr size="1"><button class="readButton">Read</button><button class="deleteButton">Delete</button></li>');
 });
 //Submit Button Disable/Enable
 function submitButtonToggle() {
@@ -32,6 +32,12 @@ title.on('keyup', function() {
 url.on('keyup', function() {
   submitButtonToggle();
 });
+
+// submit.on('click', function() {
+//   if (submit.prop('disabled', false)) {
+//     alert("You must input a Title & URL in order to submit a link");
+//   }
+// });
 //Clear Inputs & Disable Submit Button
 function clearInputs() {
   title.val("");
