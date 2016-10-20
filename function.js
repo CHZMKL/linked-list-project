@@ -40,5 +40,9 @@ function clearInputs() {
 }
 //Read Button creates "read" class for bookmark
 rightSide.on('click', '.readButton', function() {
-  console.log($(this).parent().toggleClass('read'));
+  $(this).parent().toggleClass('read');
+});
+//Delete Button removes selected card from page
+rightSide.on('click', '.deleteButton', function() {
+  $(this).parent().remove();
 });

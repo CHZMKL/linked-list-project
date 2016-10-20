@@ -30,7 +30,7 @@ img {
 }
 
 .siteTitle, .siteURL, .submit {
-  width: 400px;
+  width: 75%;
   height: 30px;
   margin: 0 auto 30px;
   border: 0;
@@ -57,7 +57,7 @@ img {
 
 .defaultCard {
  height: 100px;
- width: 600px;
+ width: 75%;
  border: 2px solid black;
  margin: 20px auto 10px;
  display: inline-block;
@@ -108,5 +108,53 @@ hr {
   margin-left: 5%;
 }
 .deleteButton {
-  margin-left: 75%;
+  position: relative;
+  margin-left: 70%;
+}
+
+
+@media screen and (max-width: 940px) {
+
+  .containerLeft{
+    width: 100%;
+    height: 50%;
+  }
+  .containerRight {
+    float: none;
+    width: 100%;
+  }
+  .contentContainer {
+    width: 100%;
+  }
+  .linked-list, .siteTitle, .siteURL, .submit {
+    width: 75%;
+  }
+  .linked-list {
+    font-size: 30px;
+    justify-content: center;
+    text-align: center;
+  }
+  img {
+    width: 40px;
+    height: 40px;
+    padding-bottom: 10px;
+  }
+  .defaultCard {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .contentContainer {
+    width: 100%;
+    height: 75%;
+  }
+}
+
+@media screen and (max-width: 477px) {
+
+  .deleteButton {
+    margin-left: 60%;
+  }
 }
