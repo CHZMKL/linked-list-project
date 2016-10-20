@@ -3,7 +3,7 @@ var url = $('.siteURL');
 var submit = $('.submit');
 var rightSide = $('.containerRight');
 
-
+//Grab Inputs and Append to Right Side of Screen
 submit.on('click', function() {
   var bookmarkTitle = $('.cardTitle');
   var bookmarkURL = $('.cardURL');
@@ -18,15 +18,19 @@ submit.on('click', function() {
 
 
 
+//Submit Button Disable/Enable
+function submitButtonToggle() {
+  if (title.val() && url.val()) {
+    submit.prop('disabled', false);
+  } else {
+    submit.prop('disabled', true);
+  }
+}
 
-// function submitButtonToggle() {
-//   if (title.val() && url.val()) {
-//     submit.prop('disabled', false);
-//   } else {
-//     submit.prop('disabled', true);
-//   }
-// }
-//
-// title.on('keyup', function() {
-//   console.log(submitButtonToggle());
-// });
+title.on('keyup', function() {
+  submitButtonToggle();
+});
+
+url.on('keyup', function() {
+  submitButtonToggle();
+});
