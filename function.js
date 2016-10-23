@@ -1,7 +1,7 @@
 var title = $('.siteTitle');
 var url = $('.siteURL');
 var submit = $('.submit');
-var rightSide = $('.containerRight');
+var rightSide = $('#containerRight');
 var readButton = $('.readButton');
 var deleteButton = $('.deleteButton');
 
