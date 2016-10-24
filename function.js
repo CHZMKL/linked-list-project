@@ -1,7 +1,7 @@
 var title = $('.siteTitle');
 var url = $('.siteURL');
 var submit = $('.submit');
-var rightSide = $('.containerRight');
+var rightSide = $('#containerRight');
 var readButton = $('.readButton');
 var deleteButton = $('.deleteButton');
 
@@ -52,3 +52,5 @@ rightSide.on('click', '.readButton', function() {
 rightSide.on('click', '.deleteButton', function() {
   $(this).parent().remove();
 });
+
+//Adds http:// value to input field once it's interacted with
